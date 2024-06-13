@@ -5,36 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> -->
+    
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+    <script defer src="Js/client.js"></script>
+
+    
+
     <title>Chat App with socket.io</title>
 </head>
-<body>
+
     
 
 
    <body>
     <nav>
-
+    <div class="navBar">
+        
         <img class="logoDesign" src="whatsappIcon.png" alt="">
+        <h2 class="navDiccusion">Lets Datta  App
+        </h2>
+    </div>
     </nav>
 
 
     <div class="container">
-        <div class="msg Left" > Aditi: Hey how are you  </div>
-        <div class="msg Right" > Rohan: Bhai I'm fine. How about you  </div>
+        <div class="UserJoinCss">Rohon joined the chat</div>
+        
+        <div class="msg msgLeftCss" > Rohon: Hey how are you  </div>
+        <div class="UserJoinCss">Aditi joined the chat</div>
+        <div class="msg msgRightCss" > Aditi: Bhai I'm fine. How about you  </div>
+        <div class="msg msgLeftCss" > Rohon: I'm also fine.  </div>
+        <div class="UserJoinCss" > Rohon left the chat  </div>
 
     </div>
 
     <div class="send">
         <form accept="#" id="send-container">
             <input type="text" name="msgInp" id="msgInp">
-           <button class="btn" type="submit">Send</button>
-
+           <button class="btn" type="submit">Send </button>
         </form>
     </div>
 
    </body>
+   <footer>
+    
 
+   </footer>
+    
 
-    <script src="Js/script.js"></script>
-</body>
 </html>

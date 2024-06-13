@@ -1,8 +1,10 @@
 .logoDesign{
-    display: block;
-    margin: auto;
+    /* display: block; */
+    /* margin: auto;*/
     width: 50px;
     height: 50px;
+    /* margin-bottom: 2%;
+    margin-top: 2%; */ 
 }
 
 body{
@@ -10,9 +12,24 @@ body{
     background-image: linear-gradient(rgb(33, 29, 33), rgb(37, 54, 90) );
 }
 
+.navBar{
+    justify-content:baseline;
+    align-items: center;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.navDiccusion{
+    color: aliceblue;
+    width: 70%;
+}
+
 .container{
-    max-width: 978px;
-    /* background-color: aqua; */
+    /* max-width: 978px; */
+    max-width: 80%;
+    background-color: rgba(15, 34, 34, 0.716);
     border: 2px solid black;
     margin: auto;
     height: 60vh;
@@ -30,32 +47,75 @@ body{
     border-radius: 10px;
     color: aliceblue;
 }
-.Left{
+/* .Left{
     float: left;
     clear: both;
 }
 .Right{
     float: right;
+    clear: both; */
+/* } */
+
+
+
+.UserJoinCss{
+    /* float: right; */
     clear: both;
+    color: aliceblue;
+    text-align: center;
+}
+
+.msgLeftCss{
+    float: left;
+    clear: both;
+    background-color: rgb(14, 129, 26);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border:2px solid black ;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.msgRightCss{
+    float: right;
+    clear: both;
+    
+    background-color: rgb(234, 245, 235);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border:2px solid black ;
+    border-radius: 10px;
+    color: rgb(3, 15, 27);
 }
 
 #send-container{
-    text-align: center;
+    /* text-align: center; */
     display: block;
     margin: auto;
-    max-width: 985px;
-    width: 100%;
+    /* max-width: 985px; */
+    /* width: 100%; */
+    justify-content:baseline;
+    align-items: center;
+    max-width: 80%;
 }
 #msgInp{
-    width: 93%;
+    /* width: 93%; */
     border: 2px solid black;
     border-radius: 6px;
     height: 34px;
+    width: 80%;
 }
 
 .btn{
+    width: 15%;
     cursor: pointer;
+    background-color: rgb(14, 36, 16);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: larger;
     border: 2px solid black;
     border-radius: 6px;
-    height: 35px;
+    height: 34px;
 }
