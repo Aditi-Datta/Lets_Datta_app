@@ -1,29 +1,116 @@
 .logoDesign{
-    /* display: block; */
-    /* margin: auto;*/
-    width: 50px;
-    height: 50px;
-    /* margin-bottom: 2%;
-    margin-top: 2%; */ 
+    width: 30px;
+    height: 30px;
 }
 
 body{
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
     background-image: linear-gradient(rgb(33, 29, 33), rgb(37, 54, 90) );
 }
 
 .navBar{
-    justify-content:baseline;
+    justify-content:center;
     align-items: center;
-    text-align: center;
-    display: block;
-    max-width: 100%;
-    margin: auto;
+    /* place-items: center; */
+    /* text-align: center; */
+    display: flex;
+    width: 100%;
+    /* border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; */
+    background-color: rgb(3, 37, 28);
+    margin-bottom: 19px;
 }
+    
+    /* margin: auto; */
+
 
 .navDiccusion{
-    color: aliceblue;
-    width: 70%;
+    color: rgb(239, 226, 226);
+    width: 50%;
+}
+
+#open-popup {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 19px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position:fixed  ; 
+   
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+   
+}
+
+.modal-content {
+    background-color: rgb(67, 122, 76);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submitPopUp{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(14, 36, 16);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitPopUp:hover {
+    background-color: #095e38;
+    font-style: oblique;
 }
 
 .container{
@@ -47,19 +134,9 @@ body{
     border-radius: 10px;
     color: aliceblue;
 }
-/* .Left{
-    float: left;
-    clear: both;
-}
-.Right{
-    float: right;
-    clear: both; */
-/* } */
-
 
 
 .UserJoinCss{
-    /* float: right; */
     clear: both;
     color: aliceblue;
     text-align: center;
@@ -96,9 +173,10 @@ body{
     margin: auto;
     /* max-width: 985px; */
     /* width: 100%; */
-    justify-content:baseline;
+    justify-content:center;
     align-items: center;
     max-width: 80%;
+    padding-bottom: 25px;
 }
 #msgInp{
     /* width: 93%; */
@@ -119,3 +197,16 @@ body{
     border-radius: 6px;
     height: 34px;
 }
+
+.footer {
+      background-color: rgb(3, 41, 30);
+      padding: 5px 0;
+      color: rgb(234, 231, 231);
+      text-align: center;
+      position: relative;
+      width: 100vw;
+      bottom: 0; 
+     
+}
+    
+    

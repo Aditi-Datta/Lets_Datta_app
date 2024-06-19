@@ -28,31 +28,54 @@
         <img class="logoDesign" src="whatsappIcon.png" alt="">
         <h2 class="navDiccusion">Lets Datta  App
         </h2>
+        <button id="open-popup">Join Chat</button>
     </div>
     </nav>
 
+    <div id="popup-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="formPopUp">
+                <h2>Enter your name to join the chat</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button 
+                type="submit"
+                class="submitPopUp" id="submitPopUp">Submit</button>
+            </form>
+        </div>
+        </div>
 
     <div class="container">
         <div class="UserJoinCss">Rohon joined the chat</div>
         
-        <div class="msg msgLeftCss" > Rohon: Hey how are you  </div>
+        <!-- <div id="typewriter" class="msg msgLeftCss"></div> -->
+
+        <div class="msg msgLeftCss" id="typewriter" > Rohon:   </div>
         <div class="UserJoinCss">Aditi joined the chat</div>
-        <div class="msg msgRightCss" > Aditi: Bhai I'm fine. How about you  </div>
-        <div class="msg msgLeftCss" > Rohon: I'm also fine.  </div>
+        <div class="msg msgRightCss" id="typewriter2"  >Aditi:   </div>
+        <div class="msg msgLeftCss" id="typewriter3"> Rohon:   </div>
         <div class="UserJoinCss" > Rohon left the chat  </div>
+        <div class="UserJoinCss" > Aditi left the chat  </div>
 
     </div>
 
     <div class="send">
         <form accept="#" id="send-container">
             <input type="text" name="msgInp" id="msgInp">
-           <button class="btn" type="submit">Send </button>
+           <button class="btn" type="submit" class="submitMsg">Send </button>
         </form>
     </div>
 
    </body>
-   <footer>
-    
+   <footer class="footer">
+    <div >
+        <h4> Copyright &copy; aditidatta 2024. All Rights Reserved.</h4>
+       
+      </div>
+      <small >The chat application is a reat time chat application you can join with us to lets enjoy it.</small>
 
    </footer>
     
